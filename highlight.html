@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Text Marker</title>
+  <link rel="stylesheet" href="mark.css">
+</head>
+<body>
+  <p id="text">
+    You can select any part of this text and highlight it with your chosen color. Try it out!
+  </p>
+
+  <!-- Color picker -->
+  <label for="colorPicker">Choose a highlight color: </label>
+  <input type="color" id="colorPicker" value="#ffff00"> <!-- default: yellow -->
+
+  <!-- Action buttons -->
+  <button onclick="highlightSelection()">Highlight</button>
+  <button onclick="removeHighlight()">Remove Highlight</button>
+
+  <script src="function.js"></script>
+</body>
+</html>
